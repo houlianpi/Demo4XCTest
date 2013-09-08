@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		024877BD171DA1F2007625B8 /* CounterTest2.m in Sources */ = {isa = PBXBuildFile; fileRef = 024877BC171DA1F2007625B8 /* CounterTest2.m */; };
 		02C8554E1715528800982AC3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C8554D1715528800982AC3 /* UIKit.framework */; };
 		02C855501715528800982AC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C8554F1715528800982AC3 /* Foundation.framework */; };
 		02C855521715528800982AC3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C855511715528800982AC3 /* CoreGraphics.framework */; };
@@ -20,7 +21,13 @@
 		02C8556D1715528800982AC3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C8554D1715528800982AC3 /* UIKit.framework */; };
 		02C8556E1715528800982AC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C8554F1715528800982AC3 /* Foundation.framework */; };
 		02C855761715528800982AC3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 02C855741715528800982AC3 /* InfoPlist.strings */; };
-		02C855791715528800982AC3 /* iOSCounter4MVCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C855781715528800982AC3 /* iOSCounter4MVCTests.m */; };
+		02C85583171552AD00982AC3 /* OCMockitoIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C85582171552AD00982AC3 /* OCMockitoIOS.framework */; };
+		02C855871715530E00982AC3 /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C855861715530E00982AC3 /* OCHamcrestIOS.framework */; };
+		02C8558F1715536800982AC3 /* CounterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C8558D1715536800982AC3 /* CounterViewController.m */; };
+		02C855901715536800982AC3 /* CounterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02C8558E1715536800982AC3 /* CounterViewController.xib */; };
+		02C855921715552300982AC3 /* CounterViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C855911715552300982AC3 /* CounterViewControllerTest.m */; };
+		02C855951715561F00982AC3 /* Counter.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C855941715561F00982AC3 /* Counter.m */; };
+		02C8559717155C9000982AC3 /* CounterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C8559617155C9000982AC3 /* CounterTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		024877BC171DA1F2007625B8 /* CounterTest2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CounterTest2.m; sourceTree = "<group>"; };
 		02C855491715528800982AC3 /* iOSCounter4MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSCounter4MVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02C8554D1715528800982AC3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		02C8554F1715528800982AC3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -51,8 +59,15 @@
 		02C8556B1715528800982AC3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		02C855731715528800982AC3 /* iOSCounter4MVCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSCounter4MVCTests-Info.plist"; sourceTree = "<group>"; };
 		02C855751715528800982AC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		02C855771715528800982AC3 /* iOSCounter4MVCTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSCounter4MVCTests.h; sourceTree = "<group>"; };
-		02C855781715528800982AC3 /* iOSCounter4MVCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSCounter4MVCTests.m; sourceTree = "<group>"; };
+		02C85582171552AD00982AC3 /* OCMockitoIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCMockitoIOS.framework; sourceTree = "<group>"; };
+		02C855861715530E00982AC3 /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCHamcrestIOS.framework; sourceTree = "<group>"; };
+		02C8558C1715536800982AC3 /* CounterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CounterViewController.h; sourceTree = "<group>"; };
+		02C8558D1715536800982AC3 /* CounterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CounterViewController.m; sourceTree = "<group>"; };
+		02C8558E1715536800982AC3 /* CounterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CounterViewController.xib; sourceTree = "<group>"; };
+		02C855911715552300982AC3 /* CounterViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CounterViewControllerTest.m; sourceTree = "<group>"; };
+		02C855931715561F00982AC3 /* Counter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Counter.h; sourceTree = "<group>"; };
+		02C855941715561F00982AC3 /* Counter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Counter.m; sourceTree = "<group>"; };
+		02C8559617155C9000982AC3 /* CounterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CounterTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +88,8 @@
 				02C8556C1715528800982AC3 /* SenTestingKit.framework in Frameworks */,
 				02C8556D1715528800982AC3 /* UIKit.framework in Frameworks */,
 				02C8556E1715528800982AC3 /* Foundation.framework in Frameworks */,
+				02C85583171552AD00982AC3 /* OCMockitoIOS.framework in Frameworks */,
+				02C855871715530E00982AC3 /* OCHamcrestIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +118,8 @@
 		02C8554C1715528800982AC3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				02C855861715530E00982AC3 /* OCHamcrestIOS.framework */,
+				02C85582171552AD00982AC3 /* OCMockitoIOS.framework */,
 				02C8554D1715528800982AC3 /* UIKit.framework */,
 				02C8554F1715528800982AC3 /* Foundation.framework */,
 				02C855511715528800982AC3 /* CoreGraphics.framework */,
@@ -115,6 +134,11 @@
 				02C8555C1715528800982AC3 /* BirdsAppDelegate.h */,
 				02C8555D1715528800982AC3 /* BirdsAppDelegate.m */,
 				02C855541715528800982AC3 /* Supporting Files */,
+				02C8558C1715536800982AC3 /* CounterViewController.h */,
+				02C8558D1715536800982AC3 /* CounterViewController.m */,
+				02C8558E1715536800982AC3 /* CounterViewController.xib */,
+				02C855931715561F00982AC3 /* Counter.h */,
+				02C855941715561F00982AC3 /* Counter.m */,
 			);
 			path = iOSCounter4MVC;
 			sourceTree = "<group>";
@@ -136,8 +160,9 @@
 		02C855711715528800982AC3 /* iOSCounter4MVCTests */ = {
 			isa = PBXGroup;
 			children = (
-				02C855771715528800982AC3 /* iOSCounter4MVCTests.h */,
-				02C855781715528800982AC3 /* iOSCounter4MVCTests.m */,
+				024877BC171DA1F2007625B8 /* CounterTest2.m */,
+				02C8559617155C9000982AC3 /* CounterTest.m */,
+				02C855911715552300982AC3 /* CounterViewControllerTest.m */,
 				02C855721715528800982AC3 /* Supporting Files */,
 			);
 			path = iOSCounter4MVCTests;
@@ -228,6 +253,7 @@
 				02C855601715528800982AC3 /* Default.png in Resources */,
 				02C855621715528800982AC3 /* Default@2x.png in Resources */,
 				02C855641715528800982AC3 /* Default-568h@2x.png in Resources */,
+				02C855901715536800982AC3 /* CounterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +290,8 @@
 			files = (
 				02C8555A1715528800982AC3 /* main.m in Sources */,
 				02C8555E1715528800982AC3 /* BirdsAppDelegate.m in Sources */,
+				02C8558F1715536800982AC3 /* CounterViewController.m in Sources */,
+				02C855951715561F00982AC3 /* Counter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +299,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02C855791715528800982AC3 /* iOSCounter4MVCTests.m in Sources */,
+				02C855921715552300982AC3 /* CounterViewControllerTest.m in Sources */,
+				02C8559717155C9000982AC3 /* CounterTest.m in Sources */,
+				024877BD171DA1F2007625B8 /* CounterTest2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,16 +410,22 @@
 		02C855801715528800982AC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					i386,
+				);
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iOSCounter4MVC.app/iOSCounter4MVC";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOSCounter4MVC/iOSCounter4MVC-Prefix.pch";
 				INFOPLIST_FILE = "iOSCounter4MVCTests/iOSCounter4MVCTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALID_ARCHS = "armv7 armv7s i386";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -397,16 +433,22 @@
 		02C855811715528800982AC3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					i386,
+				);
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iOSCounter4MVC.app/iOSCounter4MVC";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOSCounter4MVC/iOSCounter4MVC-Prefix.pch";
 				INFOPLIST_FILE = "iOSCounter4MVCTests/iOSCounter4MVCTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALID_ARCHS = "armv7 armv7s i386";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
@@ -430,6 +472,7 @@
 				02C8557E1715528800982AC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02C8557F1715528800982AC3 /* Build configuration list for PBXNativeTarget "iOSCounter4MVCTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +481,7 @@
 				02C855811715528800982AC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,8 @@
 //
 
 #import "BirdsAppDelegate.h"
+#import "CounterViewController.h"
+#import "Counter.h"
 
 @implementation BirdsAppDelegate
 
@@ -15,6 +17,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+  Counter * counter = [[Counter alloc]initWithUserDefault:[NSUserDefaults standardUserDefaults]];
+  
+  self.window.rootViewController = [[CounterViewController alloc]initWithCounter:counter];
     [self.window makeKeyAndVisible];
     return YES;
 }
