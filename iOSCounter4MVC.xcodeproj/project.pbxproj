@@ -205,6 +205,7 @@
 				02C855661715528800982AC3 /* Frameworks */,
 				02C855671715528800982AC3 /* Resources */,
 				02C855681715528800982AC3 /* ShellScript */,
+				024F6147181DB2C2009CA363 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -268,6 +269,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		024F6147181DB2C2009CA363 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${XCODETEST}\" = \"YES\" ]; then\n\"${PROJECT_DIR}/scripts/RunUnitTests.rb\"\nfi";
+		};
 		02C855681715528800982AC3 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -279,7 +293,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+			shellScript = "# Run the unit tests in this test bundle.\nif [ \"${XCODETEST}\" = \"\" ]; then\n\"${PROJECT_DIR}/scripts/RunPlatformUnitTests.sh\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -391,7 +405,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOSCounter4MVC/iOSCounter4MVC-Prefix.pch";
 				INFOPLIST_FILE = "iOSCounter4MVC/iOSCounter4MVC-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"$(XCODE_TEST_LDFLAGS)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -402,7 +422,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOSCounter4MVC/iOSCounter4MVC-Prefix.pch";
 				INFOPLIST_FILE = "iOSCounter4MVC/iOSCounter4MVC-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"$(XCODE_TEST_LDFLAGS)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -424,6 +450,7 @@
 				GCC_PREFIX_HEADER = "iOSCounter4MVC/iOSCounter4MVC-Prefix.pch";
 				INFOPLIST_FILE = "iOSCounter4MVCTests/iOSCounter4MVCTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				VALID_ARCHS = "armv7 armv7s i386";
 				WRAPPER_EXTENSION = octest;
@@ -447,6 +474,7 @@
 				GCC_PREFIX_HEADER = "iOSCounter4MVC/iOSCounter4MVC-Prefix.pch";
 				INFOPLIST_FILE = "iOSCounter4MVCTests/iOSCounter4MVCTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				VALID_ARCHS = "armv7 armv7s i386";
 				WRAPPER_EXTENSION = octest;
