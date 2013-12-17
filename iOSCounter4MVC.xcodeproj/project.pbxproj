@@ -204,7 +204,6 @@
 				02C855651715528800982AC3 /* Sources */,
 				02C855661715528800982AC3 /* Frameworks */,
 				02C855671715528800982AC3 /* Resources */,
-				02C855681715528800982AC3 /* ShellScript */,
 				024F6147181DB2C2009CA363 /* ShellScript */,
 			);
 			buildRules = (
@@ -281,19 +280,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [ \"${XCODETEST}\" = \"YES\" ]; then\n\"${PROJECT_DIR}/scripts/RunUnitTests.rb\"\nfi";
-		};
-		02C855681715528800982AC3 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\nif [ \"${XCODETEST}\" = \"\" ]; then\n\"${PROJECT_DIR}/scripts/RunPlatformUnitTests.sh\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
