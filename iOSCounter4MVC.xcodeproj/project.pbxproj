@@ -204,7 +204,6 @@
 				02C855651715528800982AC3 /* Sources */,
 				02C855661715528800982AC3 /* Frameworks */,
 				02C855671715528800982AC3 /* Resources */,
-				024F6147181DB2C2009CA363 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -266,22 +265,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		024F6147181DB2C2009CA363 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ \"${XCODETEST}\" = \"YES\" ]; then\n\"${PROJECT_DIR}/scripts/RunUnitTests.rb\"\nfi";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		02C855451715528800982AC3 /* Sources */ = {
