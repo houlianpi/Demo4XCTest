@@ -17,7 +17,6 @@
 		02C855601715528800982AC3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C8555F1715528800982AC3 /* Default.png */; };
 		02C855621715528800982AC3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C855611715528800982AC3 /* Default@2x.png */; };
 		02C855641715528800982AC3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C855631715528800982AC3 /* Default-568h@2x.png */; };
-		02C8556C1715528800982AC3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C8556B1715528800982AC3 /* SenTestingKit.framework */; };
 		02C8556D1715528800982AC3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C8554D1715528800982AC3 /* UIKit.framework */; };
 		02C8556E1715528800982AC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C8554F1715528800982AC3 /* Foundation.framework */; };
 		02C855761715528800982AC3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 02C855741715528800982AC3 /* InfoPlist.strings */; };
@@ -28,6 +27,7 @@
 		02C855921715552300982AC3 /* CounterViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C855911715552300982AC3 /* CounterViewControllerTest.m */; };
 		02C855951715561F00982AC3 /* Counter.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C855941715561F00982AC3 /* Counter.m */; };
 		02C8559717155C9000982AC3 /* CounterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C8559617155C9000982AC3 /* CounterTest.m */; };
+		F3860AA6186829AB002B2F2A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3860AA418682988002B2F2A /* XCTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +55,7 @@
 		02C8555F1715528800982AC3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		02C855611715528800982AC3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		02C855631715528800982AC3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		02C8556A1715528800982AC3 /* iOSCounter4MVCTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSCounter4MVCTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		02C8556B1715528800982AC3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		02C8556A1715528800982AC3 /* iOSCounter4MVCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSCounter4MVCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02C855731715528800982AC3 /* iOSCounter4MVCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSCounter4MVCTests-Info.plist"; sourceTree = "<group>"; };
 		02C855751715528800982AC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		02C85582171552AD00982AC3 /* OCMockitoIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCMockitoIOS.framework; sourceTree = "<group>"; };
@@ -68,6 +67,7 @@
 		02C855931715561F00982AC3 /* Counter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Counter.h; sourceTree = "<group>"; };
 		02C855941715561F00982AC3 /* Counter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Counter.m; sourceTree = "<group>"; };
 		02C8559617155C9000982AC3 /* CounterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CounterTest.m; sourceTree = "<group>"; };
+		F3860AA418682988002B2F2A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02C8556C1715528800982AC3 /* SenTestingKit.framework in Frameworks */,
+				F3860AA6186829AB002B2F2A /* XCTest.framework in Frameworks */,
 				02C8556D1715528800982AC3 /* UIKit.framework in Frameworks */,
 				02C8556E1715528800982AC3 /* Foundation.framework in Frameworks */,
 				02C85583171552AD00982AC3 /* OCMockitoIOS.framework in Frameworks */,
@@ -110,7 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				02C855491715528800982AC3 /* iOSCounter4MVC.app */,
-				02C8556A1715528800982AC3 /* iOSCounter4MVCTests.octest */,
+				02C8556A1715528800982AC3 /* iOSCounter4MVCTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,12 +118,12 @@
 		02C8554C1715528800982AC3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3860AA418682988002B2F2A /* XCTest.framework */,
 				02C855861715530E00982AC3 /* OCHamcrestIOS.framework */,
 				02C85582171552AD00982AC3 /* OCMockitoIOS.framework */,
 				02C8554D1715528800982AC3 /* UIKit.framework */,
 				02C8554F1715528800982AC3 /* Foundation.framework */,
 				02C855511715528800982AC3 /* CoreGraphics.framework */,
-				02C8556B1715528800982AC3 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -213,8 +213,8 @@
 			);
 			name = iOSCounter4MVCTests;
 			productName = iOSCounter4MVCTests;
-			productReference = 02C8556A1715528800982AC3 /* iOSCounter4MVCTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = 02C8556A1715528800982AC3 /* iOSCounter4MVCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -388,6 +388,10 @@
 		02C8557D1715528800982AC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOSCounter4MVC/iOSCounter4MVC-Prefix.pch";
 				INFOPLIST_FILE = "iOSCounter4MVC/iOSCounter4MVC-Info.plist";
@@ -405,6 +409,10 @@
 		02C8557E1715528800982AC3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOSCounter4MVC/iOSCounter4MVC-Prefix.pch";
 				INFOPLIST_FILE = "iOSCounter4MVC/iOSCounter4MVC-Info.plist";
@@ -425,18 +433,18 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iOSCounter4MVC.app/iOSCounter4MVC";
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-					"\"$(SRCROOT)\"",
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(SRCROOT)",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOSCounter4MVC/iOSCounter4MVC-Prefix.pch";
 				INFOPLIST_FILE = "iOSCounter4MVCTests/iOSCounter4MVCTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_AFTER_BUILD = YES;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				VALID_ARCHS = "armv7 armv7s";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -446,18 +454,18 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iOSCounter4MVC.app/iOSCounter4MVC";
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-					"\"$(SRCROOT)\"",
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(SRCROOT)",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOSCounter4MVC/iOSCounter4MVC-Prefix.pch";
 				INFOPLIST_FILE = "iOSCounter4MVCTests/iOSCounter4MVCTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_AFTER_BUILD = YES;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				VALID_ARCHS = "armv7 armv7s";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};

@@ -11,7 +11,7 @@
     // Collaborators
 
     // Test support
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
 #define HC_SHORTHAND
 #import <OCHamcrestIOS/OCHamcrestIOS.h>
@@ -20,7 +20,7 @@
 #import <OCMockitoIOS/OCMockitoIOS.h>
 
 
-@interface CounterTest2 : SenTestCase
+@interface CounterTest2 : XCTestCase
 @end
 
 @implementation CounterTest2

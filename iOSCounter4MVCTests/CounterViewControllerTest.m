@@ -7,7 +7,7 @@
     // Collaborators
 
     // Test support
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
 
 #define HC_SHORTHAND
@@ -16,7 +16,7 @@
 #define MOCKITO_SHORTHAND
 #import <OCMockitoIOS/OCMockitoIOS.h>
 
-@interface CounterViewControllerTest : SenTestCase
+@interface CounterViewControllerTest : XCTestCase
 @end
 
 @implementation CounterViewControllerTest
